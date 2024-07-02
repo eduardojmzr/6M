@@ -33,5 +33,10 @@
     </div>
     <script>
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        const today
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1); // Añade 1 día
+        document.getElementById('fecha').textContent = tomorrow.toLocaleDateString('es-ES', options);
+    </script>
+</body>
+</html>
 
